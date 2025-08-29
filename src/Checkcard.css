@@ -1,0 +1,123 @@
+/* Container background */
+.checkout-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+}
+
+/* Card Styling */
+.checkout-card {
+  width: 380px;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Titles */
+.checkout-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-title {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Rows */
+.checkout-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+/* Payment buttons */
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.payment-btn {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.payment-btn:hover {
+  transform: scale(1.05);
+  background: #f0f0f0;
+}
+
+/* Specific brand colors */
+.gpay svg {
+  color: #f45142;
+}
+
+.amazon svg {
+  color: #ff9900;
+}
+
+.razorpay svg {
+  color: #0c4b8e;
+}
+
+/* Proceed button */
+.proceed-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.proceed-btn:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,79 @@
+/* Wrapper: grid with 5 columns */
+.cartWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  gap: 16px; 
+  padding: 20px;
+}
+
+/* Each Card */
+.cartCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 240px;       /* Small card */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cartCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.cartCard img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* Title */
+.cartCard h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 4px 0;
+  white-space: nowrap;        /* keep in one line */
+  overflow: hidden;           /* hide extra text */
+  text-overflow: ellipsis;    /* show ... */
+  max-width: 140px; 
+}
+
+/* Price */
+.cartCard .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 6px 0;
+}
+
+/* Remove button */
+.cartCard .remove {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.cartCard .remove:hover {
+  background: #cc0000;
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #6366f1; /* Indigo shade */
+  display: inline-block;
+  padding-bottom: 4px;
+}
